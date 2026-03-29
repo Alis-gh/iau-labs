@@ -1,8 +1,8 @@
 ---
-description: Installing VirtualBox & kali Linux and Ubuntu
+description: Installing VirtualBox & Kali Linux and Ubuntu
 ---
 
-# VirtualBox & kali Install and Preparation
+# VirtualBox & Kali Install and Preparation
 
 ### 1- VirtualBox installation:
 
