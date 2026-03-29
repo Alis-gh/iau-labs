@@ -1,5 +1,9 @@
 # Lab 1 Exercise
 
+{% hint style="info" %}
+**Note before start :** I recommend using **Metasploitable 2** instead of Ubuntu for this lab, as it is designed to be vulnerable and has many open ports ready for testing.
+{% endhint %}
+
 ### 1- VM Configuration
 
 If you using VirtualBox and going to use **your personal internet** make sure you use **'Nat Network'** to make isolate network for the server and clients
@@ -70,39 +74,78 @@ before we start you should cheack if the two machine are in same network and hav
 
 write command such as ip a or ifconfig to know the ip address for each machine and use ping from one of them to see if they can reach each other: <br>
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 1- Send a flag between two machines using Netcat :&#x20;
 
 open kali Linux and click on the kali icon and search for wireshark
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+Choose **"eth0"** and press Enter
 
-Chose eth0 and press Enter
-
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure></div>
 
 Now go back and open terminal in the other machine and run:
 
 `netcat -l -p 8000 -u -v`
 
-> &#x20;This command creates a listening connection on port 8000.
+> This command creates a listening connection on **port 8000** using **UDP**.
 
-Then open terminal in the Kali machine and run:
+**Then open the terminal on the Kali Linux machine and run:**
 
 `netcat <ip address> 8000 -u`
 
-> Now any message typed in the second machine will appear in the first machine.
+> Now, any message typed on the second machine will appear on the first machine.
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+Note: Flag meanings in the **Netcat command**
+
+* **-u** → use **UDP** protocol
+* **-p** → specify the **port number**
+* **-l** → set **listen mode** (wait for incoming connection)
+* **-v** → enable **verbose mode** (show connection details)
+
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 as you can see here Whireshark catch the messages
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt="" width="563"><figcaption></figcaption></figure>
 
+To save the **received** message into a file use:
 
+`netcat <ip address> 8000 -u > output.txt`
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+**Note:** This file will only save the received messages, not the messages you send.
 
+**Example in my case:**
 
+* **Kali ⇒ Ubuntu ❌** (will not be saved)
+* **Ubuntu ⇒ Kali ✅** (will be saved)
 
+<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+
+### 2- Scan using Nmap capture it in Kali VM
+
+First step,open kali Linux and click on the kali icon and search for Wireshark
+
+Choose **"eth0"** and press Enter
+
+<div><figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure></div>
+
+Second step, open the terminal in the host machine and run the **Nmap** command to scan the target machine:
+
+```
+nmap <target-ip>
+```
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Note : No Open Ports Found
+
+The scan showed 1000 closed ports because this is a fresh Ubuntu install. By default, Ubuntu does not run any services (like SSH or Web servers) for security reasons. Since no software is "listening" for connections, the system simply resets all Nmap attempts.
+
+Recommendation: For penetration testing practice, I recommend using&#x20;
+
+**Metasploitable 2** instead, as it is designed to be vulnerable and has many open ports ready for testing.
+{% endhint %}

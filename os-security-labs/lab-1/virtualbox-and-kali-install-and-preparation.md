@@ -10,7 +10,7 @@ description: Installing VirtualBox & kali Linux and Ubuntu
 
 **Choose the platform packages for your OS.**
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Make sure you selected **"VirtualBox Application".**
 
@@ -103,7 +103,7 @@ After starting the virtual machine, log in using the username `kali` and the pas
 **Note: Ubuntu LTS and the standard Ubuntu versions usually have large file sizes, typically ranging from 5.3 GB to 6.5 GB.**
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 After download, open VirtualBox and import the Kali Linux virtual machine.
 
@@ -113,11 +113,11 @@ Click on Machines ⇒ New
 
 Open the **"ISO Image"** option, select "Other", then choose the ISO image you downloaded.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 make sure you uncheck the "Proceed with Unattended Installation" option.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 **Write the name of the machine and select:**
 
@@ -125,14 +125,14 @@ make sure you uncheck the "Proceed with Unattended Installation" option.
 * **OS Distribution:** Ubuntu
 * **OS Version:** Ubuntu (64-bit)
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 **For specifying virtual hardware:**
 
 * **Base Memory (RAM): 4 GB is recommended.**
 * **Number of CPUs: 3–4 CPUs are sufficient**
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 **The minimal disk size should be 20 GB.**
 
@@ -145,35 +145,35 @@ Note: The same steps can be used to set up any virtual machine that uses an **IS
 After you finish , right click on your machine and press settings.\
 Go to **Display** and change Video Memory from 16 to 128 MB.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 After starting the virtual machine, choose **"Try or Install Ubuntu"**
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Choose **"Use wired connection"**
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 You can skip the Update if you want
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 Choose **"Install Ubuntu"** then select **"Interactive installation"**
 
-<div><figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure></div>
 
 You can choose **"Extended Selection"** if needed, but we will proceed with the default option.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 Make sure you check Install third-party software for graphics and Wi-fi hardware to avoid errors
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 Choose **"Erase disk and install Ubuntu"** (won't erase your disk, don't worry)
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 After setting your username and selecting the time zone, click "Install" to start the installation process when you should restart the machine.
 
@@ -181,7 +181,7 @@ After setting your username and selecting the time zone, click "Install" to star
 
 &#x20;If the system installation process freezes, try repeating the installation without an internet connection. This usually resolves the issue.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -193,11 +193,11 @@ After setting your username and selecting the time zone, click "Install" to star
 
 Click the download icon to start downloading the file.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 After extracting the compressed file, you will find two files inside the folder:  a **.vmdk** file
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 Open VirtualBox and import the Kali Linux virtual machine
 
@@ -211,18 +211,18 @@ Click on Machines ⇒ New
 * **OS Distribution:** **Ubuntu**
 * **OS Version:** **Ubuntu** (64-bit)
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 **For specifying virtual hardware:**
 
 * **Base Memory (RAM):** 1 GB is enough.
 * **Number of CPUs:** 1 CPUs are enough.
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 **2 GB should be enough as disk size.**
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 After you finish , right click on your machine and press settings.
 
@@ -232,11 +232,11 @@ Now go to Storage ⇒ Controller: IDE then press this icon.
 
 Select **"Add"**, then navigate to the folder where you extracted the compressed file and select the Kali Linux **.vmdk** file.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 After starting the virtual machine, log in using the username `msfadmin` and the password `msfadmin`.
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
