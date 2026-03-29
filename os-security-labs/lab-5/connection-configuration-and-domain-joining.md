@@ -173,9 +173,9 @@ After success you should reboot the machine
 
 After joining the domain with client go back to server and open Server Manager Dashboard click on **tools** ⇒ **Active Directory Users and Computers**
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Open the domain folder, then select&#x20;**_**Computers**_**. You should see the names of the devices that are joined to the domain.**
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 

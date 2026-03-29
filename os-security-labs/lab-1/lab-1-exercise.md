@@ -66,5 +66,43 @@ Then go to Network Adapter -> Select Custom and choose the same network number y
 
 ### Lab Exercise :&#x20;
 
+before we start you should cheack if the two machine are in same network and have connecation:&#x20;
+
+write command such as ip a or ifconfig to know the ip address for each machine and use ping from one of them to see if they can reach each other: <br>
+
+<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
+1- Send a flag between two machines using Netcat :&#x20;
+
+open kali Linux and click on the kali icon and search for wireshark
+
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+
+Chose eth0 and press Enter
+
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+
+Now go back and open terminal in the other machine and run:
+
+`netcat -l -p 8000 -u -v`
+
+> &#x20;This command creates a listening connection on port 8000.
+
+Then open terminal in the Kali machine and run:
+
+`netcat <ip address> 8000 -u`
+
+> Now any message typed in the second machine will appear in the first machine.
+
+<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+as you can see here Whireshark catch the messages
+
+<figure><img src="../../.gitbook/assets/image (30).png" alt="" width="563"><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
 
 

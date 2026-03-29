@@ -37,7 +37,7 @@ DomainName\Username
 
 &#x20;Right on Users ⇒ New ⇒ Group
 
-<div><figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### adding members in the Group
 
@@ -46,11 +46,11 @@ you have 2 way to add member in group:
 first way:\
 &#x20; Double click on the group ⇒ Members ⇒ Add&#x20;
 
-<div><figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 Write the user name then click on "Check Names"<br>
 
-<div><figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 Second way : \
 \
@@ -58,7 +58,7 @@ Second way : \
 
 &#x20; Enter the group name then click on "Check Names"<br>
 
-<div><figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 
 
