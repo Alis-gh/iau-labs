@@ -91,8 +91,6 @@ After starting the virtual machine, log in using the username `kali` and the pas
 
 ### 3- Download other Linux distribution
 
-&#x20; [Metasploitable 2](https://sourceforge.net/projects/metasploitable/)<br>
-
 <details>
 
 <summary>Ubuntu</summary>
@@ -105,7 +103,7 @@ After starting the virtual machine, log in using the username `kali` and the pas
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-After download, open VirtualBox and import the Kali Linux virtual machine.
+After download, open VirtualBox and import the Ubuntu virtual machine.
 
 Click on Machines ⇒ New
 
@@ -199,7 +197,7 @@ After extracting the compressed file, you will find two files inside the folder:
 
 <figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-Open VirtualBox and import the Kali Linux virtual machine
+Open VirtualBox and import the Metasploitable 2 virtual machine
 
 Click on Machines ⇒ New
 
@@ -230,7 +228,7 @@ Now go to Storage ⇒ Controller: IDE then press this icon.
 
 <figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
-Select **"Add"**, then navigate to the folder where you extracted the compressed file and select the Kali Linux **.vmdk** file.&#x20;
+Select **"Add"**, then navigate to the folder where you extracted the compressed file and select the **.vmdk** file.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 

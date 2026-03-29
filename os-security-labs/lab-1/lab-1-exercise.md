@@ -70,15 +70,13 @@ Then go to Network Adapter -> Select Custom and choose the same network number y
 
 ### Lab Exercise :&#x20;
 
-before we start you should cheack if the two machine are in same network and have connecation:&#x20;
-
-write command such as ip a or ifconfig to know the ip address for each machine and use ping from one of them to see if they can reach each other: <br>
+**Before starting, make sure both machines are connected to the same network and can communicate with each other. Use commands such as `ip a` or `ifconfig` to identify the IP address of each machine, then use the `ping` command to verify connectivity between them.**
 
 <figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 1- Send a flag between two machines using Netcat :&#x20;
 
-open kali Linux and click on the kali icon and search for wireshark
+open kali Linux and click on the kali icon and search for Wireshark
 
 Choose **"eth0"** and press Enter
 
