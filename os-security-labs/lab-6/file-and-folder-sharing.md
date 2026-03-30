@@ -69,7 +69,7 @@ in the server I make this text file with this content&#x20;
 
 <figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
-I make new user and add it to NerAdmin group that they have permissions for read only and I try to change the text :&#x20;
+I make new user and add it to NetAdmin group that they have permissions for read only and I try to change the text :&#x20;
 
 <div><figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure></div>
 
