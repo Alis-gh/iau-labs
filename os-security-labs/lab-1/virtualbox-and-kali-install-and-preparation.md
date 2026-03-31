@@ -14,7 +14,7 @@ description: Installing VirtualBox & Kali Linux and Ubuntu
 
 Make sure you selected **"VirtualBox Application".**
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### 2- Kali Linux Install :&#x20;
 

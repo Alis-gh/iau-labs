@@ -28,7 +28,7 @@ Open PowerShell or Command Prompt (CMD), then run the command **ipconfig** to di
 **Note**: According to the instructor’s instructions, the Default Gateway field on the server is intentionally left blank because the server is used as the primary gateway within the lab environment. Therefore, the client machines are configured with the Server IP address as both the Default Gateway and DNS server as part of the lab network setup.
 {% endhint %}
 
-### 2- Client Network Configuration and Domain Joining:&#x20;
+### 2- Client Network Configuration , Domain Joining **and C**hange The Computer Name:&#x20;
 
 <details>
 
@@ -54,13 +54,17 @@ Note: don't forget that DNS server = your server IP address
 
 <figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
-#### 2- Joining the Domain:&#x20;
+#### **2- Joining the Domain and change the computer name :**&#x20;
 
 Open Search bar then search for **This Pc** ⇒ **Properties** ⇒ **Rename this Pc** ⇒ **Change**
 
 <div><figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure></div>
 
 Then, enter the same domain name that you configured on the server and press **OK**
+
+{% hint style="info" %}
+**Also you can change the computer from here**
+{% endhint %}
 
 <div><figure><img src="../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure></div>
 
@@ -102,13 +106,17 @@ Note: don't forget that DNS server = your server IP address
 
 <div><figure><img src="../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure></div>
 
-#### 2- Joining the Domain:&#x20;
+#### **2- Joining the Domain and change the computer name:**&#x20;
 
 Open start menu then right click on My Computer ⇒ Properties ⇒ Computer Name
 
 <div><figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure></div>
 
 Then, enter the same domain name that you configured on the server and press **OK**
+
+{% hint style="info" %}
+**Also you can change the computer from here**
+{% endhint %}
 
 <div><figure><img src="../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure></div>
 
@@ -130,8 +138,6 @@ then you should reboot the machine
 
 open start menu and search for "Network and Sharing Centre" ⇒ Click Local Area Connection ⇒ Properties ⇒ Internet Protocol Version 4 (TCP/IPv4) ⇒ Use the following IP address:
 
-
-
 <div><figure><img src="../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure></div>
 
 <div><figure><img src="../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure></div>
@@ -150,12 +156,18 @@ If the your Ethernet adapter empty like this: you should do as we do In Windows 
 
 <figure><img src="../../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
 
-**2- Joining the Domain:**\
+#### **2- Joining the Domain and change the computer name**
+
+\
 Open the search bar and search for **Computer**. Then go to **Properties → Change settings** ⇒Change and write the domain name.
 
 <div><figure><img src="../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure></div>
 
 Then, enter the same domain name that you configured on the server and press **OK**
+
+{% hint style="info" %}
+**Also you can change the computer from here**
+{% endhint %}
 
 <div><figure><img src="../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure></div>
 
@@ -178,4 +190,3 @@ After joining the domain with client go back to server and open Server Manager D
 **Open the domain folder, then select&#x20;**_**Computers**_**. You should see the names of the devices that are joined to the domain.**
 
 <figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
-
