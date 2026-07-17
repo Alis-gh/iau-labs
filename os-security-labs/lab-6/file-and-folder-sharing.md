@@ -15,11 +15,11 @@ A shared folder is created and access is controlled using both Share permissions
 
 Write the Group name then press "Add" and make the Permission Level as "Read" for the group then press "Share"
 
-<div><figure><img src="../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (290).png" alt="" width="563"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (291).png" alt="" width="473"><figcaption></figcaption></figure></div>
 
 Note: It is possible to assign permissions directly to a user instead of a group. However, using groups is considered best practice. In this lab, the user was added directly to ensure they have "Read/Write" permissions that are higher than other users.
 
-### Additional : <br>
+### Additional :&#x20;
 
 Check "Advance Sharing" Make sure that the “Share this folder” option is enabled.
 
@@ -37,7 +37,7 @@ Open File Explorer, then navigate to Network. If you see this warning, click on 
 
 <div><figure><img src="../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure></div>
 
-Here you should enter any user inside the server who got admin privilege like `Luffy` in our case or Server Administrator account
+Here you should enter any user inside the server who got admin privilege like `Tom` in our case or Server Administrator account
 
 <figure><img src="../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
@@ -85,9 +85,13 @@ Search for **"Turn Windows features on or off"** then click on it
 
 <figure><img src="../../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
 
-Enter any user inside the server who got admin privilege if they ask
+Enter any user inside the server who got admin privilege if&#x20;
 
-<figure><img src="../../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (292).png" alt="" width="563"><figcaption></figcaption></figure>
+
+ask
+
+
 
 Search for SMB 1.0/CIFS File Sharing Support and Make it on
 
