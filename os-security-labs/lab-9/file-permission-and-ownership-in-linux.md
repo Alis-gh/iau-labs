@@ -61,7 +61,7 @@ touch testfile
 ls
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (1).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (1) (1).png" alt=""></p>
 
 ***
 
@@ -71,7 +71,7 @@ ls
 ls -lh
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (2).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (2) (1).png" alt=""></p>
 
 > The first character tells you if it's a **directory (d)** or a **file (-)**.
 
@@ -86,7 +86,7 @@ chmod +x testfile
 ls -lh
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (3).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (3) (1).png" alt=""></p>
 
 **Remove execute from everyone:**
 
