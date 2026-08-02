@@ -5,7 +5,6 @@
 * [Lab 1](README.md)
   * [VirtualBox & Kali Install and Preparation](os-security-labs/lab-1/virtualbox-and-kali-install-and-preparation.md)
   * [Lab 1 Exercise](os-security-labs/lab-1/lab-1-exercise.md)
-  * [ss](os-security-labs/lab-1/ss.md)
 * [Lab 2](os-security-labs/lab-2.md)
 * [Lab 4](os-security-labs/lab-4/README.md)
   * [Pre-Installation Preparation](os-security-labs/lab-4/pre-installation-preparation.md)
