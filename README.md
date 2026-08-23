@@ -17,13 +17,13 @@ Install one of the following:
 
 Download and prepare the following virtual machines:
 
-* [**Windows Server 2012**](/broken/pages/k6UVpFbI5y2B81M2UaB2#id-1-windows-server-2012-and-product-keys)
-* [**Windows 7 or Windows 10**](/broken/pages/VZqV8TazGeSALbUQPQLV)
-* [**Windows XP**](/broken/pages/VZqV8TazGeSALbUQPQLV#windows-xp)
-* [**Kali Linux**](/broken/pages/nbsNwaUrgOiVUp5Gr8L9#id-2-kali-linux-install)
+* [**Windows Server 2012**](os-security-labs/lab-4/pre-installation-preparation.md#installing-windows-server)
+* [**Windows 7 or Windows 10**](os-security-labs/lab-5/windows-client.md)
+* [**Windows xp**](os-security-labs/lab-5/windows-client.md#windows-xp)&#x20;
+* [**Kali Linux**](os-security-labs/lab-1/virtualbox-and-kali-install-and-preparation.md#id-2-kali-linux-install)
 * **Another Linux distribution** such as:
-  * [Ubuntu](/broken/pages/nbsNwaUrgOiVUp5Gr8L9#ubuntu)
-  * [Metasploitable 2](/broken/pages/nbsNwaUrgOiVUp5Gr8L9#metasploitable-2)
+  * [Ubuntu](os-security-labs/lab-1/virtualbox-and-kali-install-and-preparation.md#ubuntu)
+  * [Metasploitable 2](os-security-labs/lab-1/virtualbox-and-kali-install-and-preparation.md#metasploitable-2)
 
 {% hint style="info" %}
 Make sure all virtual machines can start successfully before attending the class.

@@ -3,7 +3,7 @@
 ## OS Security Labs
 
 * [Pre-Lab (important)](README.md)
-* [Lab 1](<README (1).md>)
+* [Lab 1](os-security-labs/lab-1/README.md)
   * [VirtualBox & Kali Install and Preparation](os-security-labs/lab-1/virtualbox-and-kali-install-and-preparation.md)
   * [Lab 1 Exercise](os-security-labs/lab-1/lab-1-exercise.md)
 * [Lab 2](os-security-labs/lab-2.md)
