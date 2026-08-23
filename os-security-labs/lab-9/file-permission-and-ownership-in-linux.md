@@ -22,7 +22,7 @@ Each file has 3 permission groups:
 * **group** → users in the assigned group
 * **others** → everyone else
 
-<figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -61,7 +61,7 @@ touch testfile
 ls
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (1) (1).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (4).png" alt=""></p>
 
 ***
 
@@ -71,7 +71,7 @@ ls
 ls -lh
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (2) (1).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (5).png" alt=""></p>
 
 > The first character tells you if it's a **directory (d)** or a **file (-)**.
 
@@ -86,7 +86,7 @@ chmod +x testfile
 ls -lh
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (3) (1).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (6).png" alt=""></p>
 
 **Remove execute from everyone:**
 
@@ -95,7 +95,7 @@ chmod -x testfile
 ls -lh
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (4).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (7).png" alt=""></p>
 
 **Add execute for owner only:**
 
@@ -138,7 +138,7 @@ chmod 740 testfile
 ls -lh
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (5).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (8).png" alt=""></p>
 
 ```bash
 # Full permissions for everyone
@@ -146,7 +146,7 @@ chmod 777 testfile
 ls -lh
 ```
 
-<p align="center"><br><img src="../../.gitbook/assets/image (6).png" alt=""></p>
+<p align="center"><br><img src="../../.gitbook/assets/image (9).png" alt=""></p>
 
 ***
 
@@ -157,7 +157,7 @@ chmod --reference=testfile testfile2
 ls -lh
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (7).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (10).png" alt=""></p>
 
 ***
 
@@ -168,7 +168,7 @@ chmod -R g+r TEST
 ls -lh
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (8).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (11).png" alt=""></p>
 
 ***
 
@@ -180,7 +180,7 @@ First, add a new user:
 sudo adduser ahmed
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (9).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (12).png" alt=""></p>
 
 Now change the owner of a file:
 
@@ -189,7 +189,7 @@ sudo chown ahmed file1.txt
 ls -l file1.txt
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (10).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (13).png" alt=""></p>
 
 > **Note:** Only **root** can change file ownership.
 
@@ -203,7 +203,7 @@ sudo chown :group2 file1.txt
 ls -l file1.txt
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (203).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (256).png" alt=""></p>
 
 ***
 

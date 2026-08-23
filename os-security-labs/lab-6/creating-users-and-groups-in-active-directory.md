@@ -18,11 +18,11 @@ Then click right on Users ⇒ New ⇒ User
 
 Chose a name and user name and set password and write it store it somewhere
 
-<div><figure><img src="../../.gitbook/assets/image (280).png" alt="" width="563"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (282).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (333).png" alt="" width="563"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (334).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (335).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 We need to create another user with the option “User must change password at next logon”.
 
-<div><figure><img src="../../.gitbook/assets/image (283).png" alt="" width="563"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (138) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (336).png" alt="" width="563"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (138) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Testing Login After Creating Users
 
@@ -31,13 +31,13 @@ If it is not displayed, manually enter it using the following format:
 
 DomainName\Username
 
-<div><figure><img src="../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure></div>
 
 ### 2- Creating Groups
 
 Right on Users ⇒ New ⇒ Group
 
-<div><figure><img src="../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### adding members in the Group
 
@@ -46,11 +46,11 @@ you have 2 way to add member in group:
 first way:\
 Double click on the group ⇒ Members ⇒ Add
 
-<div><figure><img src="../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 Write the user name then click on "Check Names"
 
-<div><figure><img src="../../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure></div>
 
 Second way :\
 \
@@ -58,7 +58,7 @@ Double click on your user ⇒ Members of ⇒ Add
 
 Enter the group name then click on "Check Names"
 
-<div><figure><img src="../../.gitbook/assets/image (288).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (341).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### In addition your admin account should be member of these groups
 
@@ -68,4 +68,4 @@ Domain Admins\
 Domain Users\
 Schema Admins
 
-<figure><img src="../../.gitbook/assets/image (289).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (342).png" alt="" width="563"><figcaption></figcaption></figure>

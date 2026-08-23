@@ -63,7 +63,7 @@ facility.priority    /path/to/log/file
 apt install rsyslog
 ```
 
-<figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
 
 Then start it:
 
@@ -71,7 +71,7 @@ Then start it:
 systemctl start rsyslog
 ```
 
-<p align="center"> <img src="../../.gitbook/assets/image (276).png" alt=""></p>
+<p align="center"> <img src="../../.gitbook/assets/image (329).png" alt=""></p>
 
 ***
 
@@ -101,7 +101,7 @@ cp /etc/rsyslog.conf /etc/rsyslog.conf.backup
 vim /etc/rsyslog.conf
 ```
 
-<p align="center"><img src="../../.gitbook/assets/image (278).png" alt=""></p>
+<p align="center"><img src="../../.gitbook/assets/image (331).png" alt=""></p>
 
 You will see the full configuration including the `#### RULES ####` section. This is where log routing rules are defined.
 

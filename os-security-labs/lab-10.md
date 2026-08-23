@@ -34,7 +34,7 @@ id
 whoami
 ```
 
-<p align="center"><img src="../.gitbook/assets/image (205).png" alt=""></p>
+<p align="center"><img src="../.gitbook/assets/image (258).png" alt=""></p>
 
 ***
 
@@ -48,7 +48,7 @@ First, update your system packages:
 sudo apt update
 ```
 
-<p align="center"><img src="../.gitbook/assets/image (206).png" alt=""></p>
+<p align="center"><img src="../.gitbook/assets/image (259).png" alt=""></p>
 
 ***
 
@@ -66,7 +66,7 @@ sudo adduser samie
 
 Follow the prompts to set a password and fill in the user information, then press **Y** to confirm.
 
-<p align="center"><img src="../.gitbook/assets/image (207).png" alt=""></p>
+<p align="center"><img src="../.gitbook/assets/image (260).png" alt=""></p>
 
 > **Note:** When you create a new user, Linux automatically creates a group with the same name and adds the user to it.
 
@@ -82,7 +82,7 @@ Then switch back to your original user:
 su kali
 ```
 
-<p align="center"><img src="../.gitbook/assets/image (208).png" alt=""></p>
+<p align="center"><img src="../.gitbook/assets/image (261).png" alt=""></p>
 
 ***
 
@@ -103,7 +103,7 @@ id
 
 You should see `27(sudo)` in the groups list.
 
-<p align="center"><img src="../.gitbook/assets/image (209).png" alt=""></p>
+<p align="center"><img src="../.gitbook/assets/image (262).png" alt=""></p>
 
 ***
 
@@ -121,9 +121,9 @@ Verify the user is removed by checking the passwd file:
 cat /etc/passwd
 ```
 
-<p align="center"><img src="../.gitbook/assets/image (210).png" alt=""></p>
+<p align="center"><img src="../.gitbook/assets/image (263).png" alt=""></p>
 
-<figure><img src="../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -147,7 +147,7 @@ To view it:
 cat /etc/passwd
 ```
 
-<p align="center"><img src="../.gitbook/assets/image (213).png" alt=""></p>
+<p align="center"><img src="../.gitbook/assets/image (266).png" alt=""></p>
 
 ***
 
@@ -171,7 +171,7 @@ You will get **Permission denied**. Use `sudo`:
 sudo cat /etc/shadow
 ```
 
-<p align="center"><img src="../.gitbook/assets/image (214).png" alt=""></p>
+<p align="center"><img src="../.gitbook/assets/image (267).png" alt=""></p>
 
 > **Note:** The `max` field (default `99999`) controls how many days before the password expires. We will change this in the next step.
 
@@ -187,7 +187,7 @@ passwd
 
 You will be asked for your current password, then your new one.
 
-<figure><img src="../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
 
 > **Note:** Linux will reject the password if it is the same as the previous one, or if it is too short.
 >
@@ -199,7 +199,7 @@ To check the current password policy for a user:
 sudo chage -l salah
 ```
 
-<p align="center"><img src="../.gitbook/assets/image (216).png" alt=""></p>
+<p align="center"><img src="../.gitbook/assets/image (269).png" alt=""></p>
 
 ***
 
@@ -227,7 +227,7 @@ sudo chage -l salah
 
 You should now see **Maximum: 60** and **Password expires** set to a future date.
 
-<p align="center"><img src="../.gitbook/assets/image (217).png" alt=""></p>
+<p align="center"><img src="../.gitbook/assets/image (270).png" alt=""></p>
 
 ***
 
@@ -267,7 +267,7 @@ List the PAM files to see what's available:
 ls -l /etc/pam.d
 ```
 
-<figure><img src="../.gitbook/assets/image (218).png" alt="" width="436"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (271).png" alt="" width="436"><figcaption></figcaption></figure>
 
 ***
 
@@ -289,7 +289,7 @@ Open the `common-auth` file:
 vim /etc/pam.d/common-auth
 ```
 
-<figure><img src="../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
 Inside the file, add this line at the end of the auth block:
 
@@ -297,7 +297,7 @@ Inside the file, add this line at the end of the auth block:
 auth required pam_tally.so onerr=fail
 ```
 
-<figure><img src="../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
 Save and exit vim by pressing **Esc**, then typing `:wq` and pressing **Enter**.
 
@@ -323,7 +323,7 @@ Now open the `common-account` file:
 vim /etc/pam.d/common-account
 ```
 
-<figure><img src="../.gitbook/assets/image (226).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (279).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Add this line at the beginning of the account block:
 
@@ -331,7 +331,7 @@ Add this line at the beginning of the account block:
 account required pam_tally.so deny=3 unlock_time=1800 reset
 ```
 
-<figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (296).png" alt=""><figcaption></figcaption></figure>
 
 Save and exit.
 
@@ -343,7 +343,7 @@ To check if the configuration was saved, use:
 grep -nE "pam_tally|deny=3|unlock_time=1800|reset" /etc/pam.d/common-auth /etc/pam.d/common-account
 ```
 
-<figure><img src="../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
 
 > **What this does:**
 >
@@ -399,7 +399,7 @@ Use this if you have forgotten your password and cannot log in.
 
 Restart your machine. When the GRUB menu appears, press **E** to edit it.
 
-<div><figure><img src="../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure></div>
 
 **Step 11.2 — Edit the Boot Line**
 
@@ -410,7 +410,7 @@ Scroll down until find the line that starts with `linux` and contains `ro quiet 
 
 Then press **Ctrl + X** to boot.
 
-<div><figure><img src="../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure></div>
 
 **Step 11.3 — Reset Passwords**
 
@@ -428,7 +428,7 @@ passwd shawarma
 passwd sngab 
 ```
 
-<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (288).png" alt=""><figcaption></figcaption></figure>
 
 **Step 11.4 — Reboot the Machine**
 
@@ -448,7 +448,7 @@ mount -o remount,rw /
 
 Then try `passwd` again.
 
-<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (295).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Recovery Note: If you are unable to log in after applying the PAM lockout settings, return to the GRUB bash shell and run the following commands to remove the `pam_tally` lines:
@@ -462,7 +462,7 @@ sync
 exec /sbin/init
 ```
 
-<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (294).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -470,11 +470,11 @@ exec /sbin/init
 
 When booting, hold **`Shift`** to enter the GRUB menu.&#x20;
 
-<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
 
 Then click **`E`** while highlighting the Ubuntu option, and hold the down arrow to scroll to "linux"
 
-<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
 
 Find the line that starts with `linux` and contains `ro quiet splash`.
 
@@ -485,4 +485,4 @@ Make these two changes on that line:
 
 Then press **Ctrl + X** to boot.
 
-<div><figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (293).png" alt=""><figcaption></figcaption></figure></div>
