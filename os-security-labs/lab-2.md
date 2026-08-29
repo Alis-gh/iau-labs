@@ -10,7 +10,7 @@ If you using VirtualBox and going to use your personal internet make sure you us
 
 <details>
 
-<summary>How to create Nat Network in VirtualBox: </summary>
+<summary>How to create Nat Network in VirtualBox:</summary>
 
 <div align="left"><figure><img src="../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure></div>
 
@@ -58,22 +58,20 @@ Then go to Network Adapter -> Select Custom and choose the same network number y
 
 <figure><img src="../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
-
-
 </details>
 
-### Lab Exercise :&#x20;
+### Lab Exercise :
 
-#### **1- armitage**&#x20;
+#### **1- armitage**
 
 First, switch to the root user using `sudo su` (to gain full privileges).\
-&#x20;Then start PostgreSQL using `/etc/init.d/postgresql start` (required for the database). \
-After that, run `msfdb init` (to initialize the database if needed), \
+Then start PostgreSQL using `/etc/init.d/postgresql start` (required for the database).\
+After that, run `msfdb init` (to initialize the database if needed),\
 and finally execute `armitage` (to launch the graphical interface).
 
 <figure><img src="../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
-Don't change anything here : <br>
+Don't change anything here :<br>
 
 <figure><img src="../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
 
@@ -93,7 +91,7 @@ Now we going to search for exploit using find attack
 
 <div><figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure></div>
 
-We will use the exploit which is exploit/unix/ftp/vsftpd\_2.3.4 \
+We will use the exploit which is exploit/unix/ftp/vsftpd\_2.3.4\
 Make sure you set the `RHOST` (target host) to the target machine’s IP address, and the `LHOST` (local host) to your own device’s IP address correctly after that press Launch.
 
 <div><figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure></div>
@@ -110,9 +108,28 @@ As we can see here, we can interact with the shell to control the target device.
 
 <figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
-#### **2 - Penetration Testing with Metasploit Rationale**
+### **1.2 - Common Error witrh armitage&#x20;**_**Find Attacks**_
 
-&#x20;Start by making sure that both devices are on the same network.&#x20;
+If you have an issue with the OS scan or the “Find Attacks” option, try the manual method:
+
+Right-click the **Computer** icon → **Host** → **Operating System**. Then, choose the operating system of the machine you are trying to attack. In our case,\
+&#x20;**Metasploitable 2** is running **Linux**.
+
+<div align="center"><figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure></div>
+
+For the attack, after running the Nmap scan, open the **Exploits** folder and go to **Unix** if you are using **Metasploitable 2** as the target device. Then, choose the exploit you want to use.
+
+<div><figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure></div>
+
+**After clicking “Launch,” click on the device → Shell 1 → Interact.**
+
+<figure><img src="../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### **2 - Penetration Testing with Metasploit Rationale**
+
+Start by making sure that both devices are on the same network.
 
 <div><figure><img src="../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure></div>
 
@@ -129,7 +146,7 @@ Now we will check whether **vsftpd 2.3.4** has a known vulnerability or exploit 
 <figure><img src="../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
 
 As we can see, the service is vulnerable and there is a corresponding exploit available in Metasploit. Therefore, we will use this exploit to gain access to the target machine\
-first we search for the  **vsftpd 2.3.4** exploit \
+first we search for the **vsftpd 2.3.4** exploit\
 then setting the `RHOST` and then executing the `run` command.\
 \
 After gaining access, we will verify our access by checking the current user to confirm that we are inside the target system.
@@ -142,7 +159,7 @@ If a session is opened but you are not automatically interacting with it, you ca
 
 <figure><img src="../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
 
-### **Common Error :**&#x20;
+### **Common Error :**
 
 This issue is very common when using the **vsftpd\_2.3.4\_backdoor exploit**. The message indicates that the exploit has “completed” (Exploit completed), but no session was created.
 
@@ -153,4 +170,3 @@ Open another terminal and run **`sudo netstat -antp | grep 6200`** to identify t
 <figure><img src="../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
 
 Now go back to msfconsole and try again:
-
