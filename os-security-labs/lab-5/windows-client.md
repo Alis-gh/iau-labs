@@ -22,6 +22,10 @@ Product key :
 RHGJR-N7FVY-Q3B8F-KBQ6V-46YP4
 ```
 
+```
+VK7JG-NPHTM-C97JM-9MPGT-3V66T
+```
+
 After installing the **MediaCreationTool\_22H2** make sure you select the <mark style="color:$danger;">ISO file</mark>
 
 <div><figure><img src="../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure></div>

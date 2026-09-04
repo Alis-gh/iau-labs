@@ -7,6 +7,8 @@
   * [VirtualBox & Kali Install and Preparation](os-security-labs/lab-1/virtualbox-and-kali-install-and-preparation.md)
   * [Lab 1 Exercise](os-security-labs/lab-1/lab-1-exercise.md)
 * [Lab 2](os-security-labs/lab-2.md)
+* [Lab 3](os-security-labs/lab-3/README.md)
+  * [Lab 3](os-security-labs/lab-3/lab-3.md)
 * [Lab 4](os-security-labs/lab-4/README.md)
   * [Pre-Installation Preparation](os-security-labs/lab-4/pre-installation-preparation.md)
   * [Setup Domain Controller](os-security-labs/lab-4/setup-domain-controller.md)
